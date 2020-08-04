@@ -79,11 +79,29 @@ public class Main {
 //        groceries.popualteGroceryList();
 //        groceries.convertToArray();
 
-        MobilePhone aMobilePhone = new MobilePhone();
-        Contacts aContact =
-                new Contacts("Steve", "02890 YEOOOOO");
-        aMobilePhone.addContact(aContact);
-        aMobilePhone.printContacts();
+//        MobilePhone aMobilePhone = new MobilePhone();
+//        Contacts aContact =
+//                new Contacts("Steve", "02890 YEOOOOO");
+//
+//        Contacts bContact =
+//                new Contacts("Jim", "02874 TIMMMM");
+//
+//        Contacts cContact =
+//                new Contacts("Jim", "02874 TIMMMM");
+//
+//        aMobilePhone.addContact(aContact);
+//        aMobilePhone.addContact(bContact);
+//        aMobilePhone.addContact(cContact);
+//        aMobilePhone.printContacts();
+//        aMobilePhone.printNames();
+//        aMobilePhone.removeContact("Steve");
+//        aMobilePhone.removeContact("Jill");
+//        aMobilePhone.printContacts();
+//        aMobilePhone.printNames();
+//        aMobilePhone.editContact("Jim","Jenny","1337");
+//        aMobilePhone.printContacts();
+//        aMobilePhone.printNames();
+
 
 
 
@@ -344,6 +362,19 @@ public class Main {
         {
             System.out.println(groceryList.get(i));
         }
+    }
+
+    ///111 - Autoboxing
+
+    public static void autoboxExample()
+    {
+        String[] strArray = new String[10];
+        int[] intArray = new int[10];
+
+        //ArrayList doesn't accept primitive data types - needs to be a class
+        ArrayList<Integer> test = new ArrayList<>();
+
+
     }
 
 
