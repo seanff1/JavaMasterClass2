@@ -102,7 +102,38 @@ public class Main {
 //        aMobilePhone.printContacts();
 //        aMobilePhone.printNames();
 
+        //Classes - Bank, Branches, Customer
 
+        Customer aCustomer = new Customer("Steve", 20.0);
+        Customer bCustomer = new Customer("Bill", 10.0);
+        Customer cCustomer = new Customer("Jim", 5000000.0);
+        Customer dCustomer = new Customer("Jill", 1.0);
+
+        Branches aBranch = new Branches();
+        Branches bBranch = new Branches();
+
+        Bank aBank = new Bank();
+
+        aBranch.addCustomer(aCustomer);
+        aBranch.addCustomer(bCustomer);
+        aBranch.addCustomer(cCustomer);
+        bBranch.addCustomer(dCustomer);
+
+
+
+        aBranch.addTransaction(aCustomer, 20.0);
+        aBranch.addTransaction(aCustomer, 50.0);
+        aBranch.printCustomerInfo();
+        bBranch.printCustomerInfo();
+
+        aBank.addBranch(aBranch);
+        aBank.addBranch(bBranch);
+        aBank.addCustomerToBranch(bBranch, aCustomer);
+
+        System.out.println("\n" + "\n");
+        aBranch.printCustomerInfo();
+        System.out.println("\n" + "\n");
+        bBranch.printCustomerInfo();
 
 
     }
